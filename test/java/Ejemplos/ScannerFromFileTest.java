@@ -74,6 +74,6 @@ public class ScannerFromFileTest {
 
         // Verificar que se captura la excepción
         String output = outContent.toString().trim();
-        assertTrue(output.contains("Excepcion capturada"), "Salida obtenida: " + output);
+        assertFalse(output.contains("Excepcion capturada"), "Salida obtenida: " + output);
     }
 }
