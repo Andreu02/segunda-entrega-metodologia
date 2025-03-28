@@ -15,6 +15,7 @@ public class NoClassDefFound {
             throw new NoClassDefFoundError("No se pudo encontrar la clase esperada: " + ex.getMessage());
         }
         catch (NoClassDefFoundError ex) {
+            // Esta línea captura el error y lo maneja
             System.out.println("Error capturado: " + ex.getMessage());
         }
     }

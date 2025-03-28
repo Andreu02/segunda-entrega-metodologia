@@ -10,7 +10,7 @@ public class PrintStackTrace {
             Scanner in = new Scanner(new File("test.in"));
         }
         catch (FileNotFoundException ex) {
-            ex.getMessage();
+            ex.printStackTrace();
         }
     }
 }
